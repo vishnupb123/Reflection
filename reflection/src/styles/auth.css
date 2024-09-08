@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.auth-layout {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.auth-Branding {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #666666; */
+}
+
+.auth-heading{
+  width:100%;
+  height:15%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.auth-heading h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color:#fff;
+}
+.auth-heading span{
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Yellowtail', cursive; */
+  font-size: 2rem;
+  color:#fff;
+}
+.auth-form-container{
+  height:85%;
+  width: 100%;
+  background-color:transparent;
+  border-radius : 16px;
+  display: flex;
+}
+.auth-form{
+  width: 50%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding: 10px;
+  border-radius : 16px;
+  background: rgba(62, 161, 190, 0.1); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.534); /* Subtle border */
+  backdrop-filter: blur(15px) saturate(150%); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(15px) saturate(150%); /* Safari support */
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+/* Form heading */
+.heading {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+.form{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  padding: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family:'Poppins', sans-serif;
+}
+
+.otp-message {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.otp-container {
+  display: flex;
+  gap: 15px;
+  /* justify-content: center; */
+  margin: 10px 0;
+}
+
+.otp-box {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.timer {
+  font-size: 1rem;
+}
+
+.resend-otp {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family:'Poppins', sans-serif;
+  text-decoration: underline;
+}
+
+.login-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  transition:  0.3s ease;
+}
+
+.login-button:active {
+  transform: translateY(5px);
+}
+
+p{
+  font-family:'Poppins', sans-serif;
+  font-size: 14px;
+  color:#fff;
+}
+
+.form input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Set your desired placeholder color */
+  opacity: 1; /* Ensures consistent color in all browsers */
+}
+
+/* Hover and focus states for inputs and button */
+.form input:focus{
+  background: rgba(255, 255, 255, 0.4);
+  font-family:'Poppins', sans-serif;
+  border:1px solid white;
+}
+.form .login-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  font-family:'Poppins', sans-serif;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #dbdbdb;
+  cursor: pointer;
+}
+
+.forgot-password span {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.other-options{
+  width:50%;
+  height:100%;
+  background-color : #fff;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.other-options h4 {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.social-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-family:'Poppins', sans-serif;
+}
+
+.google-login {
+  background-color: hsla(0, 100%, 76%, 0.945); /* Google Red */
+}
+
+.facebook-login {
+  background-color: hsla(244, 100%, 78%, 0.945); /* Facebook Blue */
+}
+
+.social-login .icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  width: 25px;
+  height: 25px;
+}
+
+.sign-up-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #15c7c7;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family:'Poppins', sans-serif;
+  transition: transform 0.3s ease;
+  align-self: center;
+}
+
+.sign-up-button:active {
+  transform: translateY(3px);
+}
+
+
+.login-container {
+  width: 80%;
+  min-height: 90vh;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  background: rgba(62, 161, 190, 0.1); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  backdrop-filter: blur(15px) saturate(150%); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(15px) saturate(150%); /* Safari support */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  position: relative; /* Ensure positioning context for centering */
+  color: white;
+  font-family: 'Yellowtail', cursive; /* Ensure font is applied */
+  font-size: 1.5rem; /* Adjust font size for readability */
+}
+
+.branding-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius:16px ;
+}
+
+.branding-content {
+    width: 80%;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    color: white;
+    font-family: 'Yellowtail', cursive;
+    font-size: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure positioning context for centering */
+}
+
+.cursive-animation {
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    left:25%;
+    top:5%;
+    width: 700px;
+    height:100%;
+}
+  
+.cursive-animation path {
+    stroke: #fff;
+    stroke-width: 2;
+    fill: rgb(255, 255, 255);
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    /* animation: draw 16s linear forwards; */
+    /* animation: drawSparkle 6s ease forwards;
+    position: relative; */
+    animation: expandStroke 8s ease forwards infinite;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@keyframes drawSparkle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Sparkling Animation */
+.cursive-animation::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle, white 0%, transparent 60%);
+  animation: sparkle 1s infinite;
+}
+
+/* Keyframes for Sparkling Effect */
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes expandStroke {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-width: 2;
+    fill:white; /* Adjust for thicker stroke */
+  }
+}
